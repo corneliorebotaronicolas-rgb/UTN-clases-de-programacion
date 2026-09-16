@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CañuelasMit</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Cañuelas Meet</h1>
+    <p>No hay cita a ciegas ni horario en la agenda. La juntada arranca cuando el grupo de WhatsApp explota y alguien tira una ubicación por GPS a último momento. Una estación de servicio despoblada, el fondo de un estacionamiento gigante o la banquina de alguna ruta iluminada. Donde entre la manada, ahí es.</p>
+    <p>No vas a ver superautos de revista ni millonarios jugando a ser pilotos. Esto es puro laburo a pulmón. Es el auto del día a día, pero llevado a otro nivel: remachado al piso, raspando contra el lomo de burro, con llantas que costaron meses de ahorro, pintura que brilla como un espejo y un escape que te retumba en el pecho cuando pasa.</p>
+    <p>El respeto se gana con el laburo que le metiste al auto. Se arma la ronda con el termo bajo el brazo, una birra o un cigarrillo, mientras todos rodean el auto de turno para criticar, aprender o pedir un pique de dónde consiguieron ese repuesto.</p>
+    <p>El sonido de los cortes de motor rompe el silencio de la noche y hace eco en el asfalto. No hay drama, no hay distinción de marcas, hay manija por los fierros. Dura lo que tiene que durar: hasta que se acabe la madrugada, caiga la policía a despejar o la manija afloje. Un par de aceleradas de despedida, el olor a nafta quemada en el aire y la caravana que se dispersa en la nada misma. Hasta el próximo mensaje.</p>
+</header>
+    
+    <section class="biblioteca-autos">
+  <section class="biblioteca-autos">
+  <h2>Biblioteca de Naves</h2>
+  <!-- Campo de búsqueda -->
+  <div class="buscador-container">
+    <input type="text" id="inputBuscador" placeholder="Buscar por modelo, marca o estilo (ej: Gol, Fiat, Neumática)...">
+  </div>
+ <div class="filtros-container">
+  <button class="btn-filtro active" data-categoria="todos">Todos</button>
+  <button class="btn-filtro" data-categoria="neumatica">Neumática</button>
+  <button class="btn-filtro" data-categoria="fija">Fija</button>
+  <button class="btn-filtro" data-categoria="audio">Audio Car</button>
+</div>
+  <div>
+    <label for="Seleccionar">Seleccionas tu auto</label>
+    <select name="Seleccionar" id="Seleccionar">
+            <option value="FIAT">FIAT UNO SCR</option>
+            <option value="GOL">VW GOL TREND</option>
+             <option value="Peugeot">PEUGEOT 207</option>
+    </select>
+  </div>
+  <!-- Galería de autos -->
+  <div class="grid-autos" id="gridAutos">
+    <!-- Tarjeta 1 -->
+    <div class="card-auto" data-modelo="volkswagen gol trend al piso tuning">
+      <img src="url-de-tu-foto1.jpg" alt="VW Gol Trend">
+      <div class="card-info">
+        <h3>VW Gol Trend</h3>
+        <span class="tag">Suspensión Neumática</span>
+        <p>Llantas 17", laburo de pintura bicapa y escape completo.</p>
+      </div>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div class="card-auto" data-modelo="fiat uno turbo fijas racing">
+      <img src="url-de-tu-foto2.jpg" alt="Fiat Uno">
+      <div class="card-info">
+        <h3>Fiat Uno SCR</h3>
+        <span class="tag">Suspensión Fija</span>
+        <p>Armado de motor con turbo, interior restaurado a cero.</p>
+      </div>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="card-auto" data-modelo="peugeot 207 audio custom">
+      <img src="url-de-tu-foto3.jpg" alt="Peugeot 207">
+      <div class="card-info">
+        <h3>Peugeot 207 Compact</h3>
+        <span class="tag">Audio Car</span>
+        <p>Baúl customizado con doble subwoofers y llantas desplazadas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
