@@ -1,0 +1,32 @@
+body{
+    color: rgba(255, 255, 255, 0.889);
+    background-color:#1C1F25 ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.Buscador-general{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-left: 15px;
+}
+.information-about{
+    padding-left: 15px;
+    text-decoration: underline;
+}
+.tlitle-librery{
+    padding-left: 15px;
+    text-decoration: underline;
+}
+.car-class{
+    padding-left: 15px;
+    font-weight: 900;
+}
+.vw-gol-tren-photo{
+    width: 70%
+}
