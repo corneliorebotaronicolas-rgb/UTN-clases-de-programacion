@@ -149,3 +149,140 @@ body{
 .botones{
     margin-top: 30px;
 }
+
+.ofertas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-items: stretch;          /* las 3 tarjetas igual de altas */
+    padding: 0 40px;
+}
+
+.img-ofertas-1 img,
+.img-ofertas-2 img,
+.img-ofertas-3 img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;        /* contenido apilado, botón al fondo */
+    background-color: #212121;
+    border-radius: 12px;
+    padding: 8px 8px 24px;
+    color: white;
+}
+
+.ChatGPT h3{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 16px;
+    margin-bottom: 10px
+}
+    
+.investigacion-a-fondo h3{
+    font-size: 20px;
+    margin-left: 10px;
+     margin-top: 16px;
+    margin-bottom: 10px
+}
+
+.Recuperacion h3 {
+  font-size: 20px;
+  margin-left: 10px;
+   margin-top: 16px;
+    margin-bottom: 10px
+}
+
+.asistente{
+      margin: 0 12px;
+      font-style: italic;
+      font-size: 12px;
+}
+
+.avanzada{
+     margin: 0 12px;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.respuestas {
+  margin: 0 12px;
+  font-style: italic;
+  font-size: 12px;
+}
+
+/* listas */
+.tarjeta ul {
+  list-style: disc;
+  padding-left: 32px;
+  margin: 16px 12px 24px;
+}
+
+/* botón siempre abajo */
+.contenedor-boton {
+  margin-top: auto;              /* esto lo empuja al fondo */
+  padding: 0 12px;
+}
+
+
+.usar {
+  width: 100%;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 999px;          /* forma de píldora */
+  padding: 14px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.probar{
+    width: 100%;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 999px;          /* forma de píldora */
+    padding: 14px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.mas-informacion{
+    width: 100%;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 999px;          /* forma de píldora */
+    padding: 14px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+ul{
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.h2{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 80px;
+}
+
+.parrafo-secundario{
+    text-align: center;
+}
+
+.parrafo-secundario p {
+  max-width: 550px;      /* fuerza el corte en dos renglones; ajustá el valor */
+  margin: 16px auto 0;   /* "auto" a los costados centra el bloque */
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
