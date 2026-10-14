@@ -18,24 +18,32 @@ body{
     gap: 50px;
     list-style: none;
     align-items: center;
-    margin-left: 100px;
+    margin-left: 60px;
     margin-top: 20px;
+    margin-right: 60px;
 }
 
 .Logo-Business{
     color: white;
     margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;                     /* separación entre ícono y texto */
+    margin-right: auto;
 }
 
 .Logo svg{
     height: 20px;
-    width: auto;
+    width: auto;\
+    display: black;
 }
 
 .Business svg{
     width: auto;
     height: 20px;
     margin-left: 7px;
+    margin-left: 0;
 }
 
 .Lista{
@@ -50,6 +58,7 @@ body{
     gap: 30px;
     font-size: 12px;
     margin-top: 10px;
+    white-space: nowrap;
 }
 
 .Prueba-OpenAi{
@@ -80,7 +89,13 @@ body{
 }
 
 .derecha{
-    margin-left: 140px;
+    margin-left: 210px;
+      display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    flex-shrink: 0;        /* no deja que se achique */
+    white-space: nowrap;   /* el texto de cada botón no se parte */
 }
 
 .Hablar-con-un-experto{
@@ -98,8 +113,8 @@ body{
 .main-general{
     display: flex;
     flex-direction: row;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 60px;
+    margin-right: 60px;
     margin-top: 90px;
 }
 
@@ -285,4 +300,201 @@ ul{
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 20px;
+}
+
+.redes {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+.redes img {
+  height: 14px;
+  width: auto;
+  display: block;
+}
+
+.cookis{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+    gap: 10px;
+
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 250px;
+    margin-bottom: 20px;
+}
+
+.gestionar{
+    border: 0px;
+    background-color: black;
+    color: white;
+    text-decoration: underline ;
+}
+
+.año{
+   font-size: 13px;
+}
+
+.region{
+    align-items: center;
+    margin-left: 180px;
+}
+
+.idioma{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 50px;
+    border: 0;
+    border-radius: 40px;
+    align-items: center;      
+    padding: 10px 16px;
+    cursor: pointer;
+    background-color: #1F1F1F;
+    font-size: 15px;
+}
+
+.planeta{
+    color: white;
+}
+
+.tipo{
+    color: white;
+}
+
+.clase{
+     color: rgb(162, 133, 133);
+}
+
+.menu-movil {
+  display: none;
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 0;
+  line-height: 0;
+  cursor: pointer;
+}
+
+
+
+/* Tablet y celular grande: 900px o menos */
+@media (max-width: 900px) {
+.div-general-header {
+  justify-content: flex-start;   /* en vez de space-between o center */
+  gap: 20px;
+  margin: 20px 20px 0;
+  flex-wrap: wrap;
+}
+
+.Logo-Business {
+  margin-right: auto;            /* empuja lupa y menú a la derecha */
+  margin-top: 0;
+}
+
+.derecha {
+  display: none;                 /* oculta "Prueba OpenAi" */
+}
+
+.menu-movil {
+  display: block;                /* muestra el ícono de menú */
+}
+  .Lista,
+  .Hablar-con-un-experto {
+    display: none;                /* no entran; queda logo, lupa y "Prueba OpenAi" */
+  }
+
+  .derecha {
+    margin-left: 0;               /* tenía 210px */
+  }
+
+  .main-general {
+    flex-direction: column;       /* texto arriba, imagen abajo */
+    margin: 40px 20px 0;
+  }
+
+  .texto {
+    margin: 0; 
+  }
+
+  .img-parte-principal img {
+    width: 100%;                  /* tenía 600px fijos */
+    height: auto;
+  }
+
+  .ofertas {
+    grid-template-columns: 1fr;   /* una tarjeta por fila */
+    padding: 0 20px;
+  }
+
+  footer {
+    flex-direction: column;       /* tenía gap: 250px en fila */
+    align-items: center;
+    gap: 0;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .redes {
+    margin: 30px 0 0;             /* tenía margin-left: 40px */
+    justify-content: center;
+    flex-wrap: wrap;            
+  }
+
+  .cookis {
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .region {
+    margin-left: 0;               /* tenía 180px */
+  }
+
+  .idioma {
+    margin-top: 30px auto 0;
+  }
+}
+
+/* Celular: 600px o menos */
+@media (max-width: 600px) {
+  .titulo h1 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .h2 h2 {
+    font-size: 26px;
+    padding: 0 20px;
+  }
+
+  .parrafo-secundario p {
+    max-width: 90%;
+    font-size: 14px;
+  }
+
+  .botones {
+    display: flex;
+    flex-direction: column;       /* botones del hero apilados */
+    gap: 12px;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .botones button {
+    justify-content: center;
+  }
+
+  .redes {
+    flex-wrap: wrap;
+  }
 }
